@@ -14,7 +14,7 @@ public class Animation {
         frames = new ArrayList<>();   //Khởi tạo ArrayList đối tượng các ảnh
         sumLength = 0;          //Thời gian đếm
         synchronized (this) {
-            length = 0;           //Đồng bộ
+            length = 0;           
             Index = 0;
         }
     }
@@ -25,7 +25,7 @@ public class Animation {
     public synchronized void update(long elapsedTime) {//Cập nhật hoạt ảnh theo thời gian đã trôi qua
         if (frames.size() > 1) {
             length += elapsedTime;
-            if (!(lapLai && Index == frames.size() - 1)) {
+            if (!(lapLai && Index == frames.size() - 1)) {  
                 if (length >= sumLength) {
                     length = length % sumLength;
                     Index = 0;
