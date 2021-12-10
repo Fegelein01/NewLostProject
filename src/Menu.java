@@ -17,14 +17,5 @@ public class Menu{
             StartingClass.State = "guide";
         else if (mx>60 && mx<210 && my>350 && my<390) //guide button
             System.exit(1);
-//        else if (mx>60 && mx<210 && my>300 && my<340) // intro button
-//            StartingClass.State = "intro";
-//        else if (mx>60 && mx<210 && my>350 && my<390) //guide button
-//            StartingClass.State = "guide";
-//        else if (mx>60 && mx<210 && my>400 && my<440) // credits button
-//            StartingClass.State = "credits";
-//        else if(mx>60 && mx<210 && my>450 && my<490)
-//            System.exit(1);
-        
     }
 }
